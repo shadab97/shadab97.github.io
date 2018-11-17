@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        .threedee_text {
+
+            font-size: 5rem;
+            transform-origin: center center;
+            color: pink;
+            margin-top: 10%;
+            margin-left: 10%;
+            letter-spacing: 3px;
+            animation: big 2s infinite;
+            text-shadow:
+                1px 1px 0 deeppink,
+                2px 2px 0 deeppink,
+                3px 3px 0 deeppink,
+                4px 4px 0 deeppink,
+                5px 5px 0 deeppink,
+                6px 6px 0 deeppink,
+                7px 7px 0 deeppink,
+                8px 8px 0 deeppink,
+                9px 9px 0 deeppink;
+
+
+        }
+
+        @keyframes big {
+            0% {
+
+                transform: translateY(10px);
+                animation-timing-function: ease-in-out;
+            }
+
+            50% {
+                text-shadow:
+                    1px 1px 0 deeppink,
+                    2px 2px 0 deeppink,
+                    3px 3px 0 deeppink;
+                transform: translateY(80px);
+                animation-timing-function: ease-in-out;
+            }
+
+            100% {
+
+                transform: translateY(10px);
+            }
+
+        }
+
+    </style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+
+
+            width: 100%;
+            height: 700px;
+        }
+
+        .list {
+            background-color: red;
+            list-style: none;
+            display: inline;
+            width: 100px;
+            height: 100px;
+            margin: 20pxl
+        }
+
+        .lists {
+            background-color: red;
+            list-style: none;
+            display: inline;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <h1 class="threedee_text">3d Text</h1>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
