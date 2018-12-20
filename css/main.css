@@ -1,0 +1,142 @@
+* {
+    font-family: "Overpass Mono", monospace;
+}
+
+
+
+
+.hero {
+
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    background: #FC466B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 400% 400%;
+    animation: BackgroundGradient 30s ease-in infinite;
+    border-bottom: 10px solid 100px;
+}
+
+.main-nav {
+    background: #FC466B !important;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B) i !mportant;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 400% 1% !important;
+    animation: BackgroundGradientnav 10s ease-in infinite;
+}
+
+.skills li {
+    float: left;
+    margin: 15px;
+}
+
+.mt-5 {
+    margin-top: 15%;
+}
+
+.skilss-img {
+    max-height: 3.5rem;
+}
+
+.skills {
+
+    margin-top: 90vh;
+    background-image: url(../img/laptop-1478822_1920.jpg);
+    background-attachment: fixed;
+    height: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    background-size: cover;
+
+}
+
+.footer {
+    background-image: url(../img/laptop-1478822_1920.jpg);
+    background-attachment: fixed;
+    height: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    opacity: 0.8;
+    font-weight: bolder;
+
+}
+
+.my-img {
+    min-height: 150px;
+    min-width: 150px;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+
+
+.myimage {
+    background-image: url(/img/IMG-20170206-WA0020.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.main-header > .hero {
+    padding-top: 100px;
+}
+
+
+
+
+
+.fa-linkedin,
+.fa-github,
+.fa-twitter,
+.fa-instagram {
+    color: white;
+}
+
+
+.btn-floating {
+    z-index: -1;
+}
+
+@keyframes BackgroundGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes BackgroundGradientnav {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

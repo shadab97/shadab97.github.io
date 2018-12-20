@@ -2,130 +2,215 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        .threedee_text {
-
-            font-size: 5rem;
-            transform-origin: center center;
-            color: pink;
-            margin-top: 10%;
-            margin-left: 10%;
-            letter-spacing: 3px;
-            animation: big 2s infinite;
-            text-shadow:
-                1px 1px 0 deeppink,
-                2px 2px 0 deeppink,
-                3px 3px 0 deeppink,
-                4px 4px 0 deeppink,
-                5px 5px 0 deeppink,
-                6px 6px 0 deeppink,
-                7px 7px 0 deeppink,
-                8px 8px 0 deeppink,
-                9px 9px 0 deeppink;
-
-
-        }
-
-        @keyframes big {
-            0% {
-
-                transform: translateY(10px);
-                animation-timing-function: ease-in-out;
-            }
-
-            50% {
-                text-shadow:
-                    1px 1px 0 deeppink,
-                    2px 2px 0 deeppink,
-                    3px 3px 0 deeppink;
-                transform: translateY(80px);
-                animation-timing-function: ease-in-out;
-            }
-
-            100% {
-
-                transform: translateY(10px);
-            }
-
-        }
-
-    </style>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #map {
-
-
-            width: 100%;
-            height: 700px;
-        }
-
-        .list {
-            background-color: red;
-            list-style: none;
-            display: inline;
-            width: 100px;
-            height: 100px;
-            margin: 20pxl
-        }
-
-        .lists {
-            background-color: red;
-            list-style: none;
-            display: inline;
-            width: 100px;
-            height: 100px;
-            margin: 20px;
-            padding: 20px;
-            border: 2px solid black;
-        }
-
-    </style>
+    <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shadab Ali</title>
 </head>
 
-
 <body>
-    <h1 class="threedee_text">3d Text</h1>
+    <!--header start-->
+    <header class="navbar-fixed main-header">
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-wrapper sidebar">
+                    <a href="#home" class="brand-logo">Shadab Ali</a>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home"><i class="material-icons right">home</i>Home</a></li>
+                        <li><a href="#about"><i class="material-icons right">face</i>About Me</a></li>
+                        <li><a href="#project"><i class="material-icons right">laptop</i>Projects</a></li>
+                        <li><a href="#skils"><i class="material-icons right">code</i>Skilset </a></li>
+                        <li><a href="#contact"><i class="material-icons right pulse">contact_phone</i>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--display/hero content start-->
+        <div class="hero">
+            <div class="row container">
+                <div class="col s12 l3">
+                    <img src="img/0.jpg" class=" z-depth-5 my-img" alt="">
+                    <p class="my-name center">Shadab Ali</p>
+                    <div class="row ">
+                        <div class="center">connect with me !</div>
+
+                        <div class="col s3 l3">
+                            <a href=""><i class="fab fa-github fa-3x"></i></a>
+                        </div>
+                        <div class="col s3 l3">
+                            <a href=""><i class="fab fa-twitter fa-3x"></i></a>
+                        </div>
+                        <div class="col s3 l3">
+                            <a href=""><i class="fab fa-instagram fa-3x"></i></a>
+                        </div>
+                        <div class="col s3 l3">
+                            <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                        </div>
+
+                    </div>
+                    <button class="btn white black-text" type="submit" name="action">My Resume
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+                <div class="col l8 s12 offset-l1">
+                    <p class="flow-text">Hi, My name is shadab ali. I am a front end developer pursuing Bachelor's of computer application (BCA) from Lovely Professional University and a recent front-end web developer nano degree Grad from Udacity and Google India Scholar 2018.
+                        <br>if you are looking for a person who developed clean front-end website or application and have eye for user interface design or User Experience then I am here to help you out.
+                    </p>
+                </div>
+                <a name="about"></a>
+                <!-- same page movement -->
+            </div>
+        </div>
+        <!--display/hero content end-->
+    </header>
+    <!--header end-->
+    <!--navigation sidebar start-->
+    <section class=" side-nav conatiner" id="mobile-nav">
+        <h3 class="pink-text center-align ">Shadab Ali</h3>
+        <div class="center-align ">
+            <img src="img/0.jpg " width="100" height="100" alt="myimage " class="circle responsive-img">
+        </div>
+        <ul>
+            <li><a href="#home"><i class="material-icons right ">home</i>Home</a></li>
+            <li><a href="#about"><i class="material-icons right ">face</i>About Me</a></li>
+            <li><a href="#project"><i class="material-icons right ">laptop</i>Projects</a></li>
+            <li><a href="#skils"><i class="material-icons right ">code</i>skilsets</a></li>
+            <li><a href="#contact"><i class="material-icons right">contact_phone</i>Contact</a></li>
+        </ul>
+        <div class="page-footer white">
+            <div class="black-text ">
+                <div class="container center-align ">
+                    © 2018 made with <i class="material-icons red-text ">favorite</i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--navigation sidebar end-->
+    <a name="skils"></a>
+    <!-- same page movement -->
+    <!--about and skils section start-->
+
+    <section class="skills">
+        <div class="row container">
+            <h4 class="center-align">Skilsets and certifications</h4>
+            <p class="flow-text  center-align">with a passion for learning more</p>
+            <ul class="col l12 center-align">
+                <li><img class="skilss-img" src="img/html.png" alt=""></li>
+                <li><img class="skilss-img" src="img/css.png" alt=""></li>
+                <li><img class="skilss-img" src="img/js.png" alt=""></li>
+                <li><img class="skilss-img" src="img/bootstrap.png" alt=""></li>
+                <li><img class="skilss-img" src="img/gulp.png" alt=""></li>
+                <li><img class="skilss-img" src="img/webpack.svg" alt=""></li>
+                <li><img class="skilss-img" src="img/sass.svg" alt=""></li>
+                <li><img class="skilss-img" src="img/react.png" alt=""></li>
+                <li><img class="skilss-img" src="img/nodejs.png" alt=""></li>
+                <li><img class="skilss-img" src="img/angular.png" alt=""></li>
+                <li><img class="skilss-img" src="img/jq.png" alt=""></li>
+                <li><img class="skilss-img" src="img/graphql.png" alt=""></li>
+                <li><img class="skilss-img" src="img/Ajax.png" alt=""></li>
+                <li><img class="skilss-img" src="img/Materialize.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--about and skils section end-->
+    <!--project section start-->
+    <section>
+        <h2 class="center-align "><i class="material-icons medium">desktop_windows</i> <span class="orange-text">projects</span></h2>
+        <div class="row ">
+            <div class="col s12 m12 ">
+                <p class=flow-text>Projects are important in my life. They allow me to learn and gain recognition for yourself. They are one of the most powerful tools in your arsenal of things to do with your time. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/pixel.PNG" alt="pixel-art" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title orange-text">pixel Art Maker</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quam laborum, quas quidem expedita exercitationem tenetur ipsa fugit ut eligendi ipsam at atque accusantium necessitatibus quasi ea nostrum harum possimus!</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://codepen.io/shadab97/pen/rvGBXx">link</a>
+                        <p>HTML,CSS,JS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/teacher.PNG" alt="teacher-page" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title orange-text">teacher day webpage </span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam pariatur ratione illum incidunt voluptatem! Veniam consequuntur voluptates quidem in, nihil ad itaque autem quam commodi? Harum illo neque aut mollitia.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="">link</a>
+                        <p>HTML,CSS,JS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/fishpage.png" alt="fish-page" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title orange-text">fish Page</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi hic quos voluptatum aut perspiciatis et, corrupti praesentium ipsam sapiente quibusdam enim eligendi a reiciendis aliquam consequatur deleniti quam similique molestias?</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">link</a>
+                        <p>HTML,CSS,JS</p>
+                    </div>
+                </div>
+            </div>
+        </div><a name="contact"></a>
+        <!-- same page movement -->
+    </section>
+    <!--project section end-->
+
+    <!--footer star -->
+    <footer class="black-text page-footer footer">
+
+        <h4>contact us</h4>
+        <div class="row mr-5">
+            <p>sidshaab97@gmail.com</p>
+            <p> 9876251118 </p>
+            <p>Address</p>
+            <p>BH-3,lovely professional university,jalandhar,punjab,india</p>
+        </div>
+
+        <div class=" center-align footer-content ">
+            © 2018 made with <i class="material-icons red-text ">favorite</i>
+        </div>
+    </footer>
+
+    <!--footer end -->
+    <!--Import jQuery before materialize.js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script src="js/materialize.min.js "></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.button-collapse').sideNav();
+
+        });
+
+    </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
