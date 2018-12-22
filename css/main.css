@@ -4,11 +4,7 @@
     margin: 0px;
 }
 
-
-
-
 .hero {
-
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -49,6 +45,14 @@
 
 .skils-img {
     max-height: 3.5rem;
+}
+
+
+
+.brand-logo {
+    font-size: 5rem !important;
+    font-family: 'Monoton', cursive;
+
 }
 
 .skills {
