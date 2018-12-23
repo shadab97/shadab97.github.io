@@ -9,7 +9,5 @@
                   .then(reg => console.log('Service Worker: Registered (Pages)'))
                   .catch(err => console.log(`Service Worker: Error: ${err}`));
           });
-      } else {
-          console.log("sw not supported");
       }
   });
