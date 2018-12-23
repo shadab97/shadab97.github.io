@@ -5,7 +5,7 @@
       if ('serviceWorker' in navigator) {
           window.addEventListener('load', () => {
               navigator.serviceWorker
-                  .register('/sw.js')
+                  .register('/shadab97.github.io/sw.js', {scope: '/shadab97.github.io/'})
                   .then(reg => console.log('Service Worker: Registered (Pages)'))
                   .catch(err => console.log(`Service Worker: Error: ${err}`));
           });
