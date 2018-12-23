@@ -6,6 +6,6 @@
   });
 // Make sure sw are supported
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker. .register('/shadab97.github.io/sw.js', scope: '/shadab97.github.io/')
+    navigator.serviceWorker.register('/shadab97.github.io/sw.js', scope: '/shadab97.github.io/')
 
   }
