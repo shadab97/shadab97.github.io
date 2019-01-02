@@ -270,8 +270,8 @@
         if ('serviceWorker' in navigator) {
           
                 navigator.serviceWorker
-                    .register('/shadabali.me/serviceworker.js', {
-                        scope: '/shadab97.github.io/'
+                    .register('./serviceworker.js', {
+                        scope: './'
                     })
                     .then(reg => console.log('Service Worker: Registered (Pages)'))
                     .catch(err => console.log(`Service Worker: Error: ${err}`));
