@@ -19,13 +19,13 @@
     background-size: 400% 400%;
     animation: BackgroundGradient 30s ease-in infinite;
     border-bottom: 10px solid 100px;
-    margin-bottom: 1.5rem;
+   margin-bottom: 1.5rem;
 }
 
 .main-nav {
     background: #FC466B !important;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B) i !mportant;
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B) i !important;
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3F5EFB, #FC466B) !important;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -46,8 +46,10 @@
 .skils-img {
     max-height: 3.5rem;
 }
-
-
+.card-panel{
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
 
 .brand-logo {
     font-size: 5rem !important;
@@ -56,35 +58,39 @@
 }
 
 .skills {
-
-    margin-top: 90vh;
+    margin-top: 89vh;
     background-image: url(../img/botany-dark-green-plants-fern-1687341.jpg);
     background-attachment: fixed;
-    max-height: 100%;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
-    margin-bottom: 10vh;
-    height: auto;
-    background-position: center;
+    height: 100%;
+    background-position: center; 
     color: white;
-
-
 }
-
 .certificate {
     border: 1px;
-    box-shadow: 5px 10px 8px #888888;
+    background: white;
+    position: relative;
 }
-
-.certificate .certi-info {}
-
+.main{
+    background-color: #52ACFF;
+    background-color: #20a0f3;
+    background-image: linear-gradient(180deg, #20a0f3 0%, #355ce2 24%, #2618d2 49%, #0a0463 75%, #00000a 100%);  
+}
+.projects{margin-top: -20px;
+    padding: 10px;
+ 
+}
+.sec-certi{ 
+    margin-top: -20px;
+    padding: 10px;
+}
 .certi-img {
     width: 70px;
     height: 70px;
     padding: 5px;
 }
-
 .hire {
     border: 3px dotted black;
     text-align: center;
@@ -94,21 +100,12 @@
     padding: 20px;
 
 }
-
-.skills .skills-dont-have {
-    padding: 20px;
-
-}
-
 .footer {
-    background-image: url(../img/laptop-1478822_1920.jpg);
-    background-attachment: fixed;
+  
     height: auto;
-    background-repeat: no-repeat;
     width: 100%;
-    background-size: cover;
     font-weight: bolder;
-
+    margin-top: -20px;
 }
 
 .my-img {
@@ -125,7 +122,9 @@
 }
 
 
-
+.close{
+  
+}
 
 .main-header > .hero {
     padding-top: 100px;
