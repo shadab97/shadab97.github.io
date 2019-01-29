@@ -3,37 +3,6 @@
     padding: 0px;
     margin: 0px;
 }
-
-.hero {
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    color: white;
-    background: #FC466B;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3F5EFB, #FC466B);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    background-size: 400% 400%;
-    animation: BackgroundGradient 30s ease-in infinite;
-    border-bottom: 10px solid 100px;
-   margin-bottom: 1.5rem;
-}
-
-.main-nav {
-    background: #FC466B !important;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B) i !important;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3F5EFB, #FC466B) !important;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    background-size: 400% 1% !important;
-    animation: BackgroundGradient 30s ease-in infinite;
-}
-
 .skills li {
     float: left;
     margin: 15px;
@@ -57,24 +26,14 @@
 
 }
 
-.skills {
-    margin-top: 89vh;
-    background-image: url(../img/botany-dark-green-plants-fern-1687341.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-    height: 100%;
-    background-position: center; 
-    color: white;
-}
+
 .certificate {
     border: 1px;
     background: white;
     position: relative;
 }
 .main{
-    background-color: #52ACFF;
+    
     background-color: #20a0f3;
     background-image: linear-gradient(180deg, #20a0f3 0%, #355ce2 24%, #2618d2 49%, #0a0463 75%, #00000a 100%);  
 }
@@ -114,11 +73,12 @@
     height: 100%;
     width: 100%;
 }
-
+.resume{
+   background: transparent; 
+}
 .resume:hover {
     background-color: black !important;
     color: white !important;
-
 }
 
 
