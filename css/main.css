@@ -1,150 +1,275 @@
-* {
-    font-family: "Overpass Mono", monospace;
-    padding: 0px;
+/* accent color #13E4E4 */
+:root{
+    --accent:#13E4E4;
+    --main:#D0D0D0;
+    --secondary:#181826;scroll-behavior: smooth;
+}
+*{
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-.skills li {
-    float: left;
-    margin: 15px;
+a:link,a:visited{
+    color: inherit;
+    text-decoration: none;
 }
-
-.mt-5 {
-    margin-top: 15%;
+ul,li{
+    list-style: none;
 }
-
-.skils-img {
-    max-height: 3.5rem;
+body{
+    color: var(--secondary);
+    font-size: 18px;
+    font-family: "Roboto",sans-serif;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+   
 }
-.card-panel{
-    background-color: #08AEEA;
-    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+.dark{
+    background: var(--secondary) !important;
+    color:var(--main) !important;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
-
-.brand-logo {
-    font-size: 5rem !important;
-    font-family: 'Monoton', cursive;
-
+.dark-btn{
+    background: var(--accent) !important;
+    color: var(--secondary) !important; 
 }
-
-
-.certificate {
-    border: 1px;
-    background: white;
+.hero-navigation{
+    width: 100%;
+    height: 85vh;
     position: relative;
+  
+   
 }
-.main{
-    
-    background-color: #20a0f3;
-    background-image: linear-gradient(180deg, #20a0f3 0%, #355ce2 24%, #2618d2 49%, #0a0463 75%, #00000a 100%);  
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 5px 10px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top:0%;
+    background-color: var(--secondary);
+    color: var(--accent);
+    box-shadow: 1px 0px 20px 2px #181826;
 }
-.projects{margin-top: -20px;
-    padding: 10px;
- 
+.navbar{
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
 }
-.sec-certi{ 
-    margin-top: -20px;
-    padding: 10px;
+.navbar li{
+    padding-left: 2.5rem;
 }
-.certi-img {
-    width: 70px;
-    height: 70px;
-    padding: 5px;
+/* side navigation for mobile and tablet device */
+.side-navigation{
+    position: absolute;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10;
+    top: 0px;
+    background:var(--main);
+    color:#181826;
+    left: -200px;
+    height: 100vh;
+    width:200px;
 }
-.hire {
-    border: 3px dotted black;
+.side-navigation.open{
+    display: block;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.side-navigation-list{
+    text-align: center;
+    margin-top: 50%;
+    -webkit-transform: translate(0px, 100%);
+        -ms-transform: translate(0px, 100%);
+            transform: translate(0px, 100%);
+}
+/* side navigation end*/
+.dark-light{
+    border-radius: 20px;
+    position: relative;
+    margin :0px 5px ;
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 2rem;
+    z-index: 11;
+}
+.intro{
+    text-align: center;
+    margin-top: 20vh;
+   /* background-color: var(--secondary); */
+    margin-left: auto;
+    margin-right: auto;
+    /* color: var(--accent); */
+    border-radius: 1.5em;
+   }
+.img-self{
+    max-width:100%;
+    width:200px;
+    height: 200px;
+   
+}
+.contact-link{
+    padding: 0px 10px;
+}
+.list-word{
+    background-color: var(--secondary);
+    color: var(--accent);
+    padding: 2px 5px;
+    width: 145px;
+    display:inline-block;
+}
+.headline{
+    margin: 5px 0px;
+    text-align: center;
+}
+.contact-us{
+    margin: 10px 0px;
     text-align: center;
 }
 
-.skills .skills-have {
+.contact-btn{
+    padding:10px 30px;
+    margin-top: 20px;
+    background: #181826;
+    color: #13E4E4;
+    border-radius: 400px;
+    box-shadow: 1px 0px 20px 2px #181826;
+}
+.about-me{
     padding: 20px;
-
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
 }
-.footer {
-  
-    height: auto;
-    width: 100%;
-    font-weight: bolder;
-    margin-top: -20px;
+.portfolio{
+   margin: 8px;
+ 
 }
-
-.my-img {
-    min-height: 150px;
-    min-width: 150px;
-    height: 100%;
-    width: 100%;
+.aboutme-desc{
+margin-top: 10px;
 }
-.resume{
-   background: transparent; 
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 10px;
+    margin-bottom:1.5em;
+    border: 3px solid #181826;
+    background-color:var(--secondary);
+    color: var(--main);
+    border: 5px dashed #13E4E4;
 }
-.resume:hover {
-    background-color: black !important;
-    color: white !important;
-}
-
-
-.close{
-  
+.project-desc p{
+    margin: 5px;
 }
 
-.main-header > .hero {
-    padding-top: 100px;
+.project-img{
+    clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
 }
 
-
-.fa-linkedin,
-.fa-github,
-.fa-twitter,
-.fa-instagram {
-    color: white;
+.project-img {
+    background-position: center center;
+    background-size: cover;
 }
-
-.fa-instagram:hover {
-    color: #fd5949;
-
+.pro1{
+    background-image: url('/img/gitfinderwebsite.png');
 }
-
-.fa-github:hover {
-    color: #24292E;
+.pro2{
+background-image: url("/img/joshpsdtohtml.png");
 }
-
-.fa-linkedin:hover,
-.fa-twitter:hover {
-    color: #1DA1F2;
+.copy{
+    margin: 20px auto;
+    text-align: center;
 }
-
-.btn-floating {
-    z-index: -1;
+.skils{
+    text-align: center;
 }
-
-@keyframes BackgroundGradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+.skils img{
+    margin: 10px;
 }
-
-@media (max-width: 991px) {
-    .my-img {
-        height: 100px;
-        width: 100px;
+/* for style from 0px till 768px  width*/
+@media only screen and (max-width: 767px) {
+    .icon-burger{
         display: block;
-        margin: 0 auto;
     }
-
-    .resume {
-        display: block;
-        margin: 0 auto;
+    .navbar{
+        display: none;
     }
-
-    .intro {
-        padding-bottom: 10px;
+    .img-self {
+        width: 150px;
+        height: 150px;
     }
+    .project {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: auto;
+        overflow: hidden;
+    }
+    .project-desc{
+        padding-top: 20px;
+        margin: 5px 3px;
+    }
+    .project-img{
+        clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0 100%);
+        height: 300px;
+      
+    }
+    .name{
+        font-size: 1.3em;
+    }
+    .work{
+        font-size: 1em;
+    }
+    .about-me{
+      width: 95vw;
+    }
+    .contact-link a >img{
+        width: 35px;
+    }
+   
+}
 
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+  
+   
+}
+
+/* for style from 768px width to above */
+@media only screen and (min-width: 768px) {
+    .icon-burger{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+    }
+    .list-word{
+        transform: rotate(-3deg);
+    }
+    .allpro{
+        margin: 5%;
+    }
+    .project-desc{
+        padding-top: 20px;
+    }
+    .project{
+        height: 400px;
+    }
+ 
+  
 }

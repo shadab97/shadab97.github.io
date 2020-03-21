@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88494326-2"></script>
@@ -8,400 +7,140 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-88494326-2');
 </script>
-
+<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" id="stash-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400&amp;subset=latin%2Clatin-ext&amp;ver=@@pkg.version" type="text/css" media="all">
     <meta charset="utf-8">
     <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
     <meta name="google-site-verification" content="o8tXux_-9b13T-afzBCURH2poWLpeWIvEuaXiUXcKUE" />
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen" />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/main.css">
     <!--import service worker-->
-    <meta name="theme-color" content="#DE4A81" />
+    <meta name="theme-color" content="#181826" />
     <link rel="manifest" href="/manifest.json">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" property="og:description" content="Hi, My name is shadab ali. I am a front end developer pursuing Bachelor's of computer application (BCA) from Lovely Professional University and a recent front-end web developer nano degree Grad from Udacity and Google India Scholar 2018.
     if you are looking for a person who developed clean front-end website or application and have eye for user interface design or User Experience then I am here to help you out." data-react-helmet="true">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" name="keywords" content="frontend developer,shadab97,shadab ali,web developer, fullstack developer, freelancer ,ui developer ,user experience ">
     <title>shadab Ali</title>
-    <style>
-        .hero {
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    color: white;
-    background: #FC466B;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3F5EFB, #FC466B);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    background-size: 400% 400%;
-    animation: BackgroundGradient 30s ease-in infinite;
-    border-bottom: 10px solid 100px;
-   margin-bottom: 1.5rem;
-}
-
-.main-nav {
-    background: #FC466B !important;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B) i !important;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3F5EFB, #FC466B) !important;
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    background-size: 400% 1% !important;
-    animation: BackgroundGradient 30s ease-in infinite;
-}
-.skills {
-    margin-top: 89vh;
-    background-image: url(../img/parallax.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-    height: 100%;
-    background-position: center; 
-    color: white;
-    /*
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-*/
-
-
-}
-.skills-have,.skills-dont-have
-{
-    opacity: 1;
-}
-    </style>
 </head>
-
 <body>
-    <!--header start-->
-    <header class="navbar-fixed main-header">
-        <nav class="main-nav">
-            <div class="container">
-                <div class="nav-wrapper sidebar">
-                    <a href="#about" class="brand-logo">s</a>
-                    <a href="#" data-activates="mobile-nav" class="button-collapse">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#about"><i class="material-icons right">face</i>About Me</a></li>
-                        <li><a href="#project"><i class="material-icons right">laptop</i>Projects</a></li>
-                        <li><a href="#skils"><i class="material-icons right">code</i>Skilset </a></li>
-                        <li><a href="#contact"><i class="material-icons right pulse">contact_phone</i>Contact</a></li>
-                    </ul>
-                </div>
+    <div class="hero-navigation">
+        <nav>
+            <div class="logo"><a href="#"><img src="./img/boy.svg" width="50px" alt="Boy logo"></a></div>
+            <ul class="navbar">
+                <li><a href="#abt">About Me</a></li>
+                <li><a href="#port">Portfolio</a></li>
+                <!-- <li><a href="Blog">Blog</a></li> -->
+                <li><a href="#contact">Contact Me</a></li>
+                <li class="dark-light">
+                    <a ><span class="sun">🌞</span>
+                    <span class="moon">🌙</span></a>
+                </li>
+            </ul>
+            <div class="icon-burger">
+                <img src="./img/menu.svg" width="50px" height="50px" alt="">
+            </div>
+            <div class="side-navigation">
+                <ul class="side-navigation-list">
+                    <li class="header-menu-list-item"><a href="#abt">About Me</a></li>
+                    <li class="header-menu-list-item"><a href="#port">Portfolio</a></li>
+                    <li class="header-menu-list-item"><a href="#contact">Contact Me</a></li>
+                    <li class="dark-light1">
+                        <a ><span class="sun1">🌞</span>
+                        <span class="moon1">🌙</span></a>
+                    </li>
+                </ul>
             </div>
         </nav>
-        <!--display/hero content start-->
-        <div class="hero" id="about">
-            <div class="row container ">
-                <div class="col s12 l3">
-                    <img src="img/0.jpg" class=" z-depth-5 my-img" alt="">
-                    <h5 class="my-name center">Shadab Ali</h5>
-                    <div class="row center">
-                        <h6 class="center flow-text">connect with me !</h6>
-
-                        <div class="col s3 l3">
-                            <a href="https://github.com/shadab97" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                        </div>
-                        <div class="col s3 l3">
-                            <a href="https://twitter.com/shadab_97" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
-                        </div>
-                        <div class="col s3 l3 fa-instagram">
-                            <a href="https://www.instagram.com/shacodes/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-                        </div>
-                        <div class="col s3 l3">
-                            <a href="https://www.linkedin.com/in/shadab-ali/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-                        </div>
-
-                    </div>
-                    <a href="http://shadabali.me/resume/" target="_blank">
-                        <button class="btn black-text resume" type="submit" name="action">My Resume<i class="material-icons right">send</i>
-                        </button>
-                    </a>
+        <div class="intro">
+            <div class="img-container">
+                <img src="./img/boy.svg" alt="Boy logo" class="img-self">
+            </div>
+            <div class="headline">
+            <h1 class="name"> 🖐 Hi there,I am Shadab Ali</h1>
+            <h2 class="work">A <span class="wrap"><span class="list-word ">Passionate</span></span> Frontend Developer</h3>
+            </div>
+            <p>For work/project related queries</p>
+            <p style="margin-bottom: 18px;"> Connect with  me here</p>
+            <span class="contact-btn"><a href="#contact">Tea☕ with me</a> </span>
+          </div>   
+    </div>
+    <div class="about-me" id="abt">
+        <h1>About Me</h1>
+        <p class="aboutme-desc">
+            I'm based in New Delhi, India <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/facebook/92/flag-for-india_1f1ee-1f1f3.png" height="20px" alt="">
+            and have done Bachelor's of computer application(BCA) from Lovely Professional University and pursuing Master's of computer application from Lovely Professional University.
+        </p>
+    </div>
+    <div class="skils">
+        <h1>Languages/Library and Framework</h1>
+        <img src="./img/html.png" width="50px"alt="html">
+        <img src="./img/css.png" width="50px"alt="css">
+        <img src="./img/sass.svg" width="50px"alt="scss">
+        <img src="./img/js.png" width="50px"alt="javascript">
+        <img src="./img/bootstrap.png" width="50px"alt="bootstrap">
+        <img src="./img/Materialize.png" width="50px"alt="Materialize">
+        <img src="./img/react.png" width="50px"alt="react">
+        <img src="./img/gulp.png" width="50px"alt="gulp">
+    </div>
+    <h1 class="headline">Portfolio</h1>
+    <div class="portfolio" id="port">
+        <div class="allpro">
+            <h2>Git Stalk</h2><span>An application thats lets stalk on github</span>
+            <div class="project">
+                <div class="project-img pro1">
+                    <!-- <img src="./img/gitfinderwebsite.png" alt=""> -->
                 </div>
-                <div class="col l8 s12 offset-l1 ">
-                    <p class="flow-text intro">Hi, My name is shadab ali. I am a front end developer pursuing Master's of computer application (BCA) from Lovely Professional University and a recent front-end web developer nano degree Grad from Udacity and Google India Scholar 2018.
-                        <br>if you are looking for a person who developed clean front-end website or application and have eye for user interface design or User Experience then I am here to help you out.
-                    </p>
-                    <h5 class="hire" id="skils">currently I'm avilable to hire</h5>
+                <div class="project-desc">
+                    <p>An application that help you to stalk anyone on github and compare your profile with them</p>
+                    <p>Built with javascript,Bootstrap and Github API</p>
+                    <p>Built with javascript,Bootstrap and Github API</p>
+                    <p>Built with javascript,Bootstrap and Github API</p>
+                    <p>Built with javascript,Bootstrap and Github API</p>
                 </div>
             </div>
-        </div>
-        <!--display/hero content end-->
-    </header>
-    <!--header end-->
-    <!--navigation sidebar start-->
-    <section class="side-nav conatiner" id="mobile-nav">
-        <h3 class="pink-text center-align ">Shadab Ali</h3>
-
-        <div class="center-align ">
-            <img src="img/0.jpg " width="100" height="100" alt="myimage " class="circle responsive-img">
-        </div>
-        <ul>
-            <li><a href="#about" class="sidebar-link sidenav-close"><i class="material-icons right ">face</i>About Me</a></li>
-            <li><a href="#project" class="sidebar-link"><i class="material-icons right ">laptop</i>Projects</a></li>
-            <li><a href="#skils" class="sidebar-link"><i class="material-icons right ">code</i>skilsets</a></li>
-            <li><a href="#contact" class="sidebar-link"><i class="material-icons right">contact_phone</i>Contact</a></li>
-        </ul>
-        <div class="page-footer white">
-            <div class="black-text ">
-                <div class="container center-align ">
-                    © 2019 made with <i class="material-icons red-text ">favorite</i>
+            <h2>PSD to HTML</h2><span>A multi purpose theme</span>
+            <div class="project">
+                <div class="project-img pro2">
+                    <!-- <img src="./img/gitfinderwebsite.png" alt=""> -->
+                </div>
+                <div class="project-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis perspiciatis commodi aperiam voluptates voluptas eum minus mollitia veniam magni non!</p>
                 </div>
             </div>
-        </div>
+        </div>    
+    </div>
+    <section class="contact-us" id="contact">
+        <h1>Contact us</h1>
+        <p>For work/project related queries</p>
+            <p> Connect with  me here</p>
+            <p style="margin-bottom: 18px;">sidshaab97@gmail.com</p>
+            <div style="margin-bottom: 20px;">
+                <span class="contact-btn email"><a href="mailto:sidshaab97@gmail.com">Email me</a></span>
+            </div>
+            <span class="contact-link">
+                <a href="https://www.linkedin.com/in/shadab-ali/" target="_blank"><img src="./img/linkedin.svg" width="50px" alt=""></a>
+            </span>
+            <span class="contact-link">
+            <a href="https://twitter.com/shacodes" target="_blank"><img src="./img/twitter.svg" width="50px" alt=""></a>
+            </span>
+            <span class="contact-link">
+            <a href="mailto:sidshaab97@gmail.com" target="_blank"><img src="./img/gmail.svg" width="50px" alt=""></a>
+            </span>
+            <span class="contact-link">
+            <a href="https://www.instagram.com/shacodes/" target="_blank"><img src="./img/instagram.svg" width="50px" alt=""></a></span>
+            <span class="contact-link"><a href="https://github.com/shadab97" target="_blank"><img src="./img/github.svg" width="50px" alt=""></a></span>
     </section>
-    <!--navigation sidebar end-->
-    <!--about and skils section start-->
-    <main class="main">
-        <section class="row skills">
-            <div class="container skills-have">
-                <h4 class="center-align">Skils I have</h4>
-                <p class="flow-text  center-align">with a passion for learning more</p>
-                <ul class="col l12 center-align">
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Html5" src="img/html.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="css3" src="img/css.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="javascript" src="img/js.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Bootstrap" src="img/bootstrap.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Gulp" src="img/gulp.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Ajax" src="img/Ajax.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Jquery" src="img/jq.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Materialize" src="img/Materialize.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="SASS" src="img/sass.svg" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Angular" src="img/angular.png" alt=""></li>
-                </ul>
-            </div>
-            <div class="container skills-dont-have">
-                <h4 class="center-align">skills I'm working on</h4>
-                <ul>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Webpack" src="img/webpack.svg" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="React" src="img/react.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Nodejs" src="img/nodejs.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Graphql" src="img/graphql.png" alt=""></li>
-                    <li><img class="skils-img tooltipped" data-delay="0" data-position="top" data-tooltip="Mongodb" src="img/mongodb.png" alt=""></li>
-                </ul>
-            </div>
-        </section>
-        <!--about and skils section end-->
-        <section class="row sec-certi" id="cert">
-            <h4 class="center section-heading">certification</h4>
-            <div class="row certificate container">
-                <div class="col s12 m9 ">
-                    <p class="flow-text">Front-end Web Developer Nano Degree from udacity</p>
-                </div>
-                <div class="col s12 m3 certi-img center"><img src="./img/udacity.png" class="certi-img" alt=""></div>
-            </div>
-            <div class="row certificate container">
-                <div class="col s12 m9 ">
-                    <p class="flow-text">Full Stack Web Developer course from Udemy</p>
-                </div>
-                <div class="col s12 m3 certi-img center"><img src="./img/udemy.png" class="certi-img" alt=""></div>
-            </div>
-            <div class="row certificate container">
-                <div class="col s12 m9 ">
-                    <p class="flow-text">Responsive Web Design Certification (300 hours) from free code camp</p>
-                </div>
-                <div class="col s12 m3  center"><img src="./img/freecodecamp.jpeg" class="certi-img" alt=""></div>
-            </div>
-            <div class="row certificate container">
-                <div class="col s12 m9 ">
-                    <p class="flow-text">Data Structure using C++ from IIT,Madras</p>
-                </div>
-                <div class="col s12 m3  center"><img src="./img/nptellogo.jpg" class="certi-img" alt=""></div>
-            </div>
-            <div class="row certificate container">
-                <div class="col s12 m9 ">
-                    <p class="flow-text">Programming in C from NIIT </p>
-                </div>
-                <div class="col s12 m3  center"><img src="./img/niit.png" class="certi-img" alt=""></div>
-            </div>
-            <div class="row certificate container" id="project">
-                <div class="col s12 m9">
-                    <p class="flow-text">object oriented programming using c++ from NIIT</p>
-                </div>
-                <div class="col s12 m3  center"><img src="./img/niit.png" class="certi-img" alt=""></div>
-            </div>
-
-        </section>
-        <!--project section start-->
-        <section class="row projects">
-            <h4 class="center-align ">projects</h4>
-            <div class="row container ">
-                <div class="col s12 m12 ">
-                    <p class=flow-text>Projects are important in my life. They allow me to learn and gain recognition for yourself. They are one of the most powerful tools in your arsenal of things to do with your time. </p>
-                </div>
-            </div>
-            <div class="row container">
-                <div class="row">
-                    <div class="col s12 m4 project-card">
-                        <div class="card-panel">
-                            <h5>Pixel Art Maker</h5>
-                            <p><a class="black-text" href="https://codepen.io/shadab97/pen/rvGBXx" target="_blank"><i class="fab fa-github "></i>code</a>|<a class="black-text" href="https://codepen.io/shadab97/full/rvGBXx" target="_blank"><i class="fab fa-github "></i>live</a></p>
-                            <span class="white-text"> an app that lets you draw your own pixel .A complete browser-based app made in pure javascript.The number of row and column are dynamiclly assigned with the help of user inputs
-                            </span>
-                            <h6>HTML|CSS|javascript<h6>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card-panel teal">
-                            <h5>Memory card Game</h5>
-                            <p><a class="black-text" href="https://github.com/shadab97/fend-project-memory-game" target="_blank"><i class="fab fa-github "></i>code</a>|<a class="black-text" href="https://shadabali.me/fend-project-memory-game/" target="_blank"><i class="fab fa-github "></i>live</a></p>
-                            <span class="white-text">A complete browser-based card matching game (also known as Concentration).
-                                The cards are arranged randomly on the grid with the symbol face down
-                                The memory game presents the first opportunity to fully combine my skills in HTML, CSS, and JavaScript into a large project
-                            </span>
-                            <h6>HTML|CSS|JavaScript</h6>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card-panel teal">
-                            <h5>Github Finder</h5>
-                            <h6>
-                                <a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>code</a>
-                                |<a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>live</a>
-                            </h6>
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                            </span>
-                            <h6>HTML|CSS|AJAX</h6>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card-panel teal">
-                            <h5>Github Finder</h5>
-                            <h6>
-                                <a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>code</a>
-                                |<a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>live</a>
-                            </h6>
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                            </span>
-                            <h6>HTML|CSS|AJAX</h6>
-                        </div>
-                    </div>
-                    <div class="col s12 m6">
-                        <div class="card-panel teal">
-                            <h5>Github Finder</h5>
-                            <h6>
-                                <a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>code</a>
-                                |<a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>live</a>
-                            </h6>
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                            </span>
-                            <h6>HTML|CSS|AJAX</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="card-panel teal">
-                            <h5>Github Finder</h5>
-                            <h6>
-                                <a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>code</a>
-                                |<a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>live</a>
-                            </h6>
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                            </span>
-                            <h6>HTML|CSS|AJAX</h6>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card-panel teal">
-                            <h5>Github Finder</h5>
-                            <h6>
-                                <a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>code</a>
-                                |<a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>live</a>
-                            </h6>
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                            </span>
-                            <h6>HTML|CSS|AJAX</h6>
-                        </div>
-                    </div>
-                    <div class="col s12 m4">
-                        <div class="card-panel teal">
-                            <h5>Github Finder</h5>
-                            <h6>
-                                <a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>code</a>
-                                |<a class="black-text" href="https://github.com/shadab97" target="_blank"><i class="fab fa-github "></i>live</a>
-                            </h6>
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-                            </span>
-                            <h6>HTML|CSS|AJAX</h6>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--project section end-->
-
-        <!--footer star -->
-        <footer class="footer" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Email & address</h5>
-                        <p class="grey-text text-lighten-4">email:sidshaab97@gmail.com</p>
-                        <p class="grey-text text-lighten-4">New Delhi ,India</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Social Media</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">github</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">twitter</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Linkedin</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container center">
-                    © 2019 shadabali.me
-                </div>
-            </div>
-        </footer>
-    </main>
-    <!--footer end -->
-    <!--Import jQuery before materialize.js-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
-    <script src="js/materialize.min.js "></script>
-
-    
+<div class="copy">
+    <p>No copyright © issue feel free to copy anything what you like 👍</p>
+    <p>For source code of this project click this<a href="https://github.com/shadab97/shadab97.github.io">🔗"link" </a></p>
+</div>
+<script src="./js/index.js"></script>
     <script>
-        $(document).ready(function() {
-            $('.tooltipped').tooltip();
-        });
-        $(document).ready(function() {
-            $('.button-collapse').sideNav({
-                menuWidth: 300, // Default is 240
-                closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            });
-            $('.collapsible').collapsible();
-        });
         // Make sure sw are supported
         if ('serviceWorker' in navigator) {
-
             navigator.serviceWorker
                 .register('/serviceworker.js')
                 .then(reg => console.log('Service Worker: Registered (Pages)'))
@@ -409,5 +148,4 @@
         }
     </script>
 </body>
-
 </html>
